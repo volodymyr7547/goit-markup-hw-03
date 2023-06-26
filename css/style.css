@@ -327,15 +327,15 @@
     margin-bottom: 8px
   }
   
-  .teme-section-work {
+  .teame-section-work {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
-  }
+   }
+
   .team-image {
   }
   
@@ -433,7 +433,7 @@
   margin-bottom: 8px
 }
 
-.teme-section-work {
+.teame-section-work {
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 400;
