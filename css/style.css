@@ -3,8 +3,15 @@
   --logo-color: #4D5AE5;
   --hero-background: #2E2F42;
   --title-background: #f4f4fd;
+  --link-color: #8e8f99;
+  --link-color2: #404bbf;
   }
-  
+
+  .body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+   }
    /*Reset*/
   
    button {
@@ -18,6 +25,8 @@
   
   img {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
   
   ul {
@@ -65,11 +74,7 @@
     overflow: hidden;
   }
   
-  .body {
-   font-family: 'Roboto', sans-serif;
-   color: #434455;
-   background-color: #FFFFFF;
-  }
+
   
   
   
@@ -79,6 +84,7 @@
     background-color: #ffffff;
     border-bottom: 1px solid #e7e9fc;
     padding: 24px 0;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
   
   
@@ -106,6 +112,23 @@
   .header-span {
     color: #2E2F42;
   }
+
+  .header-link-current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    display: flex;
+  }
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--link-color2);
+  }
+
   .header-section {
     display: flex;
     flex-direction: row;
@@ -117,6 +140,8 @@
   .header-link {
     color:#2e2f42;
     padding: 24px 0;
+    position: relative; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .header-link:hover,
@@ -157,10 +182,11 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .address-link:hover,
-  .address-link:focus {
+  .tel:hover,
+  .tel:focus {
     color: #404BBF;
   }
   
@@ -168,8 +194,15 @@
   }
   
   .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main/people-office_1.jpg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--hero-background);
     padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   
   .hero-section-title {
@@ -201,6 +234,7 @@
     border-radius: 4px;
     margin:0% auto;
     padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .hero-section-btn:hover,
@@ -215,9 +249,22 @@
   .strategy {
   padding: 120px 0;
   }
+    
+  .strategy-ikon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--title-background);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
   
+  .strategy-ikon {
+  }
   .strategy-section-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .strategy-section-list {
